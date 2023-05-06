@@ -6,3 +6,12 @@ function getComputerChoice() {
   return randomChoice;
 }
 
+function playerSelection() {
+  let choice;
+  do {
+    choice = prompt(
+      "What is your choice? Rock, paper or scissors?"
+    ).toLowerCase();
+  } while (!(choice == "rock" || choice == "paper" || choice == "scissors"));
+  return choice;
+}
